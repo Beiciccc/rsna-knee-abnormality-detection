@@ -13,7 +13,7 @@ Snapshot verified on 2026-08-07. Scores and notebook versions can change; follow
 The strongest reproducible public reference in this snapshot is V14 at 0.824. Its main ingredients are:
 
 - DINOv2-S image encoder with the last six blocks unfrozen.
-- Four-fold training and ten epochs.
+- A fixed report-hash one-fifth holdout, with separate 224 px and 336 px single-model runs trained for ten epochs; the final submission uses the 336 px model.
 - A 130 mm physical crop rendered at 336 px.
 - Three adjacent slices per input slot and six sequence/anatomy slots.
 - Public report-derived weak labels, with greater weight on the 58 reviewed studies.
