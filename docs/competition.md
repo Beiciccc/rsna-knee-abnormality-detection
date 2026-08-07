@@ -19,16 +19,18 @@ Predict a per-study probability for each of twelve knee MRI findings:
 11. Bone contusion
 12. Fracture
 
-The training set includes MRI studies, series-level descriptors, and multilingual free-text radiology reports. Only a subset of studies has condition labels, so the reports can provide additional supervision.
+The training set includes 4,407 MRI studies, 24,371 series, and multilingual free-text radiology reports. Only 58 studies have complete image-reviewed condition labels, so the reports can provide additional weak supervision. The scoring test set contains approximately 1,300 studies and has no reports.
 
 ## Data layout
 
-- `train.csv`: study identifier, patient sex, report, and twelve binary targets.
+- `train.csv`: study identifier, report, and twelve binary targets. The live file does not contain `PatientSex`; the host confirmed that it was removed from the CSV and may instead be read from DICOM metadata ([discussion 733423](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733423)).
 - `train_series.csv`: series identifier, fluid sensitivity, fat suppression, and anatomical plane.
 - `train_series/<StudyInstanceUID>/<SeriesInstanceUID>/<SOPInstanceUID>.dcm`: DICOM slices.
 - The scoring test set contains approximately 1,300 studies and replaces the small example test set at runtime.
 
 MRI intensity, orientation, resolution, compression, sequence length, scanner protocol, and site distribution vary across studies.
+
+The reports can be ambiguous or internally inconsistent. The host states that the reviewed labels were assigned independently by two musculoskeletal radiologists with a third reader resolving disagreements ([discussion 733491](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733491)). Report-derived labels should therefore be treated as noisy supervision rather than ground truth.
 
 ## Evaluation
 

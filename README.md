@@ -7,8 +7,10 @@ The challenge is to predict twelve clinically important knee abnormalities from 
 ## Repository contents
 
 - [`docs/competition.md`](docs/competition.md): task, data, metric, and submission constraints.
+- [`docs/public_baselines.md`](docs/public_baselines.md): reproducible public reference models and scores.
 - [`scripts/validate_submission.py`](scripts/validate_submission.py): structural validation for `submission.csv`.
 - [`tests/test_validate_submission.py`](tests/test_validate_submission.py): synthetic tests for the validator.
+- [`notebooks/public/rsna-knee-submission-validator`](notebooks/public/rsna-knee-submission-validator): Kaggle-ready public validator.
 - [`experiments/experiment_log.md`](experiments/experiment_log.md): factual experiment and submission history.
 - [`results/public_scores.md`](results/public_scores.md): official public leaderboard results.
 
