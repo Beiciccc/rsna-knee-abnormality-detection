@@ -37,3 +37,51 @@ Competition data, DICOM files, reports, per-study labels, generated predictions,
 weights, and the attached weak-label and figure datasets are not redistributed here.
 Those inputs remain governed by their own terms and are referenced only through public
 Kaggle identifiers in the notebook metadata.
+
+## RSNA Knee Research Tony-Sakhawat V1
+
+This repository includes an adapted, zero-output inference notebook derived from two
+public Kaggle notebooks released under the Apache License 2.0.
+
+### Tony Li — RSNA Knee infer, Version 1
+
+- **Author:** Tony Li (`tonylica` on Kaggle)
+- **Pinned version:** V1, `scriptVersionId=340809629`
+- **Source:** https://www.kaggle.com/code/tonylica/rsna-knee-infer?scriptVersionId=340809629
+- **Pinned executable-code SHA-256:** `9c460f1f1387f2c7e9bfcf26d24fb10663df80f8cdab4e738c50cb398b46fad7`
+- **License:** Apache License 2.0
+- **Contribution used:** checkpoint-compatible preprocessing, DINOv2 model, slot-attention
+  head, and fold-rank inference.
+
+### Sakhawat Hossen — Knee RSNA, Version 1
+
+- **Author:** Sakhawat Hossen (`sakhawathossen` on Kaggle)
+- **Pinned version:** V1, `scriptVersionId=340853917`
+- **Source:** https://www.kaggle.com/code/sakhawathossen/knee-rsna?scriptVersionId=340853917
+- **Pinned notebook SHA-256:** `fc5465a8b7bc1e36f693e29acf2216f1225c2a8f4278aed0f089252138346e28`
+- **Pinned executable-code SHA-256:** `9ebc90c30036e11934da4e35d209033d6b927409c6cb717d0bf567daf36f3625`
+- **License:** Apache License 2.0
+- **Contribution used:** public notebook source, including overlapping-window test-time
+  averaging and hybrid rank aggregation.
+
+The submitted V1 source for `beicicc/rsna-knee-research-tony-sakhawat-v1` has notebook
+SHA-256 `413886d8535f1f9f1849f9fa5c68f591346cbcbc1e4b3d8a4a9fc9a235076daf`,
+metadata SHA-256 `1b2e7dde71f40537541f656b75a6bc74e1f2ae85c88b714b5633b86778c316b7`,
+and executable-code SHA-256
+`9ebc90c30036e11934da4e35d209033d6b927409c6cb717d0bf567daf36f3625`.
+The public copy at
+`notebooks/public/rsna-knee-research-tony-sakhawat-v1/research_tony_sakhawat_v1_0836.ipynb`
+makes two documentation-only changes: it corrects the Tony V1 code hash in the provenance
+cell and replaces one generic process term in an upstream attribution note with
+`implementation`. Its executable code is unchanged. The corrected public notebook
+SHA-256 is `90d0fb834db5259439de91d2515b306b63c527ec8591e7d87c626ad5d7225700`.
+
+The Apache License 2.0 text is already provided in `LICENSES/Apache-2.0.txt`.
+The external dependencies are referenced by their public Kaggle identifiers only:
+
+- `metaresearch/dinov2/PyTorch/small/1` — Apache License 2.0.
+- `tonylica/rsna2026-models/2` — Kaggle reports the license as `Unknown`.
+
+No checkpoint, pretrained weight, model bundle, competition data, DICOM file, report,
+generated prediction, or output CSV is redistributed. This is an inference-code release;
+it does not claim end-to-end training reproducibility.
