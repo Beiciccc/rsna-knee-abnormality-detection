@@ -1,6 +1,7 @@
 # Public Kaggle notebooks
 
 - [RSNA Knee Submission Validator](https://www.kaggle.com/code/beicicc/rsna-knee-submission-validator): checks the official output schema, study IDs, row order, and probability values using only the Python standard library.
+- [Exp001 — Pilkwang V14 anchor](rsna-knee-exp001-pilkwang-v14-anchor): zero-output Apache-2.0 release of the scored V2 anchor with an exact T4 preflight.
 
 Only validated, licensed milestone notebooks are published here.
 

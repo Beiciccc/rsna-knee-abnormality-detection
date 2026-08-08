@@ -11,6 +11,7 @@ The challenge is to predict twelve clinically important knee abnormalities from 
 - [`scripts/validate_submission.py`](scripts/validate_submission.py): structural validation for `submission.csv`.
 - [`tests/test_validate_submission.py`](tests/test_validate_submission.py): synthetic tests for the validator.
 - [`notebooks/public/rsna-knee-submission-validator`](notebooks/public/rsna-knee-submission-validator): Kaggle-ready public validator.
+- [`notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor`](notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor): scored Exp001 V2 reproduction anchor with full Apache-2.0 provenance and GPU compatibility preflight.
 - [`experiments/experiment_log.md`](experiments/experiment_log.md): factual experiment and submission history.
 - [`results/public_scores.md`](results/public_scores.md): official public leaderboard results.
 
@@ -31,4 +32,4 @@ Download the data directly from Kaggle after joining the competition and accepti
 
 ## License
 
-Original code in this repository is released under the MIT License. Competition data and third-party assets remain governed by their respective terms.
+Original code in this repository is released under the MIT License. Competition data and third-party assets remain governed by their respective terms. The Exp001 derivative is distributed under Apache-2.0 with attribution in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md); the repository's original MIT-licensed files remain under the MIT License.
