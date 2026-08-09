@@ -14,6 +14,7 @@ The challenge is to predict twelve clinically important knee abnormalities from 
 - [`notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor`](notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor): scored Exp001 V2 reproduction anchor with full Apache-2.0 provenance and GPU compatibility preflight.
 - [`notebooks/public/rsna-knee-research-tony-sakhawat-v1`](notebooks/public/rsna-knee-research-tony-sakhawat-v1): scored EXP002 V1 inference anchor with dual Apache-2.0 attribution and an external, non-redistributed checkpoint dependency.
 - [`notebooks/public/rsna-knee-research-prvsiyan-v9-safe-reproduction`](notebooks/public/rsna-knee-research-prvsiyan-v9-safe-reproduction): scored EXP003 five-arm DINOv2 rank-ensemble source with Apache-2.0 attribution.
+- [`notebooks/public/rsna-knee-research-renta-v5-safe-reproduction`](notebooks/public/rsna-knee-research-renta-v5-safe-reproduction): scored EXP004 20-member DINOv2-small source with Apache-2.0 Pilkwang attribution and Renta V5 configuration credit.
 - [`experiments/experiment_log.md`](experiments/experiment_log.md): factual experiment and submission history.
 - [`results/public_scores.md`](results/public_scores.md): official public leaderboard results.
 

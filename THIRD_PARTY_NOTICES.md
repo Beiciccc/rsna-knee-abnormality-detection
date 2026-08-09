@@ -119,3 +119,53 @@ The runtime references `metaresearch/dinov2/PyTorch/small/1` and
 `metaresearch/dinov2/PyTorch/base/1`, both Apache-2.0. No DINOv2 weight, competition CSV,
 DICOM file, report, label table, generated prediction, or other runtime output is
 redistributed.
+
+## RSNA Knee Research Renta V5 guarded reproduction
+
+This repository includes a zero-output derivative of Pilkwang V15 under the Apache
+License 2.0 and credits Renta V5 for the target-pooling configuration.
+
+### Pilkwang Kim — RSNA Knee baseline v1, Version 15
+
+- **Author:** Pilkwang Kim (`pilkwang` on Kaggle)
+- **Pinned version:** V15, `scriptVersionId=340906482`
+- **Source:** https://www.kaggle.com/code/pilkwang/rsna-knee-baseline-v1?scriptVersionId=340906482
+- **Pinned notebook SHA-256:** `b32a9155fcc73c519e75e78c08e07d30393efc591c2798a3e40ca92f39832bb8`
+- **Pinned executable-code SHA-256:** `7412ee5106a6bacfdfaa35e30675377f8cf981b1ddcd6cbe23f512fc03690931`
+- **Pinned executable AST SHA-256:** `bda094e029abfd2fa0bc24b9916bb6cb091c44c07f99b89c66b6577a81c58853`
+- **License:** Apache License 2.0
+
+### renta.k — Renta V5 target-pooling configuration
+
+- **Kaggle account:** `renta0426`
+- **Pinned version:** V5, `scriptVersionId=341057541`
+- **Source:** https://www.kaggle.com/code/renta0426/rsna-knee-baseline-v1-fracture-tta-pool-probe?scriptVersionId=341057541
+- **Pinned notebook SHA-256:** `88dd523c444013b9d8c13dc958d193cb19fd4d53f535356a1d6e36f6bbd9bec1`
+- **Pinned executable-code SHA-256:** `f8e993b9c1950b7baf4ba1838268d516b3e4e1e77275d01905123361a12a0e72`
+- **Pinned executable AST SHA-256:** `574919df4c061dc3f5d972d12dadd6c305b00d5b11c9b4950143e41ec0ec4da5`
+- **Contribution used:** maximum-probability pooling across ten windows for Fracture and
+  Contusion; probability-mean pooling for the other ten targets.
+
+The validated project source is `beicicc/rsna-knee-research-renta-v5-safe-reproduction` V2,
+`scriptVersionId=341145955`. Its source notebook SHA-256 is
+`740740e0e6052170150cdc0d0d97ae2477baff57c0dced06002ddaee4fb92f29`, executable-code SHA-256 is `c05d18066e69e15bc5097850bb35605287e6b5efc0f070417c72f52960e7d7c9`, and
+executable AST SHA-256 is `7f062d9491ed664a54e6da5ba5935e7332bd9cf6cbe9b687d9c7d397db709c76`. The zero-output public source has
+notebook SHA-256 `6d582ad4c79fe944958b100566e67311f3a3967d55744e79c28575557e57bd7e`; only two markdown cells and notebook-level
+release metadata differ from the validated source.
+
+EXP004 V1 stopped during checkpoint validation without an ordinary output or submission.
+The public weight package contains exactly two legitimate top-level payload variants:
+17 files include an exact 12-target list and three omit that optional field. V2 accepts
+only those variants, validates every present target list, and completed all 20 members
+over all ten windows.
+
+Runtime dependencies are referenced through immutable public Kaggle identifiers and are
+not redistributed:
+
+- `pilkwang/rsna-knee-weights/1` — CC0 1.0.
+- `pilkwang/rsna-knee-llm-labels/1` — CC0 1.0.
+- `pilkwang/pilkwang-public-dataset-for-notebooks-figures/22` — Apache License 2.0.
+- `metaresearch/dinov2/PyTorch/small/1` — Apache License 2.0.
+
+No checkpoint, pretrained weight, competition CSV, DICOM file, report, per-study label,
+generated prediction, log, or other runtime output is redistributed.

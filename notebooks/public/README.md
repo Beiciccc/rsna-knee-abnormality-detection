@@ -4,6 +4,7 @@
 - [Exp001 — Pilkwang V14 anchor](rsna-knee-exp001-pilkwang-v14-anchor): zero-output Apache-2.0 release of the scored V2 anchor with an exact T4 preflight.
 - [EXP002 — Tony/Sakhawat V1 inference anchor](rsna-knee-research-tony-sakhawat-v1): zero-output Apache-2.0 release of the scored V1 inference code; its external checkpoint dependency is not redistributed and Kaggle reports that dependency's license as `Unknown`.
 - [EXP003 — Prvsiyan V9 guarded reproduction](rsna-knee-research-prvsiyan-v9-safe-reproduction): zero-output Apache-2.0 release of the scored five-arm DINOv2 rank ensemble with conservative Pilkwang V14 co-attribution.
+- [EXP004 — Renta V5 guarded reproduction](rsna-knee-research-renta-v5-safe-reproduction): zero-output Apache-2.0 release of the scored 20-member DINOv2-small rank ensemble with Renta V5 target-pooling credit.
 
 Only validated, licensed milestone notebooks are published here.
 
