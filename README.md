@@ -13,6 +13,7 @@ The challenge is to predict twelve clinically important knee abnormalities from 
 - [`notebooks/public/rsna-knee-submission-validator`](notebooks/public/rsna-knee-submission-validator): Kaggle-ready public validator.
 - [`notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor`](notebooks/public/rsna-knee-exp001-pilkwang-v14-anchor): scored Exp001 V2 reproduction anchor with full Apache-2.0 provenance and GPU compatibility preflight.
 - [`notebooks/public/rsna-knee-research-tony-sakhawat-v1`](notebooks/public/rsna-knee-research-tony-sakhawat-v1): scored EXP002 V1 inference anchor with dual Apache-2.0 attribution and an external, non-redistributed checkpoint dependency.
+- [`notebooks/public/rsna-knee-research-prvsiyan-v9-safe-reproduction`](notebooks/public/rsna-knee-research-prvsiyan-v9-safe-reproduction): scored EXP003 five-arm DINOv2 rank-ensemble source with Apache-2.0 attribution.
 - [`experiments/experiment_log.md`](experiments/experiment_log.md): factual experiment and submission history.
 - [`results/public_scores.md`](results/public_scores.md): official public leaderboard results.
 
@@ -33,4 +34,4 @@ Download the data directly from Kaggle after joining the competition and accepti
 
 ## License
 
-Original code in this repository is released under the MIT License. Competition data and third-party assets remain governed by their respective terms. The Exp001 derivative is distributed under Apache-2.0 with attribution in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md); the repository's original MIT-licensed files remain under the MIT License. The EXP002 inference derivative is distributed under Apache-2.0 with dual attribution in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md); its external checkpoint dependency is not redistributed and remains subject to its source terms.
+Original code in this repository is released under the MIT License. Competition data and third-party assets remain governed by their respective terms. Derivative experiment notebooks identified in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) are distributed under Apache-2.0 with attribution; the repository's original MIT-licensed files remain under the MIT License. Runtime dependencies and competition data remain subject to their source terms and are not redistributed.

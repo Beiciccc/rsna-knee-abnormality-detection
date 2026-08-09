@@ -85,3 +85,37 @@ The external dependencies are referenced by their public Kaggle identifiers only
 No checkpoint, pretrained weight, model bundle, competition data, DICOM file, report,
 generated prediction, or output CSV is redistributed. This is an inference-code release;
 it does not claim end-to-end training reproducibility.
+
+## RSNA Knee Research Prvsiyan V9 guarded reproduction
+
+This repository includes a zero-output source release derived from public Apache-2.0
+Kaggle notebooks.
+
+### Prvsiyan — RSNA Knee: read the report, then the knee, Version 9
+
+- **Pinned version:** V9, `scriptVersionId=340808178`
+- **Source:** https://www.kaggle.com/code/prvsiyan/rsna-knee-read-the-report-then-the-knee?scriptVersionId=340808178
+- **Pinned notebook SHA-256:** `37d6c51268dcab2b530701331db2f140971c841c66e2fb012b221949471ed460`
+- **Pinned executable-code SHA-256:** `709d6a03a35e1897e68e7a2b09efa3a47a3961d01dd00e3a4c433133218d62cc`
+- **License:** Apache License 2.0
+
+### Pilkwang Kim — RSNA Knee baseline v1, Version 14
+
+- **Pinned version:** V14, `scriptVersionId=340738955`
+- **Source:** https://www.kaggle.com/code/pilkwang/rsna-knee-baseline-v1?scriptVersionId=340738955
+- **Pinned notebook SHA-256:** `67e874fa121b2f163a090bf598815f00441789e1699772c78f96eaa1f5ba60be`
+- **License:** Apache License 2.0
+- **Attribution reason:** substantial contiguous source overlap was independently
+  observed. This conservative credit does not assert an undocumented direct fork.
+
+The validated project source is `beicicc/rsna-knee-research-prvsiyan-v9-safe-reproduction` V1,
+`scriptVersionId=340921674`. Its submitted-source notebook SHA-256
+is `fb899b2afa4b52f1560ef98b9b46fb4f733354fb2ca3e38bed51f1afb455b659`, executable-code SHA-256 is `8aac800581107ff84295c4854b46aa4c25d6d2fc1816555627fcaec1567ba62b`, and
+executable AST SHA-256 is `853c48b85dba9c5a6585af51b5940bea8b7922f20caf05add1e7f5d9ade1a25f`. The zero-output public source has
+notebook SHA-256 `146d68a8fc9696a03d602b5d307782f96d6b73c9cd5f83a814185789cd236ead`; only its first provenance markdown cell and
+notebook-level release metadata differ from the validated source.
+
+The runtime references `metaresearch/dinov2/PyTorch/small/1` and
+`metaresearch/dinov2/PyTorch/base/1`, both Apache-2.0. No DINOv2 weight, competition CSV,
+DICOM file, report, label table, generated prediction, or other runtime output is
+redistributed.
